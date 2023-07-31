@@ -99,7 +99,6 @@ input.search_bar{
     padding-top: 16px ;
     padding-bottom: 16px ;
     height: 56px;
-    width: 280px;
     border-radius: 12px ;
 }
 
@@ -640,6 +639,9 @@ div.namad{
     }
     div.special_offers{
         height: 235px;
+    }
+    div.reasons_card{
+        margin-left: 15px;
     }
 }
 
