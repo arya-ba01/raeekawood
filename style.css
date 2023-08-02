@@ -265,6 +265,7 @@ div.category_card{
     height: 80%;
     margin-left: 24px;
     margin-top: 2%;
+    position: relative;
 }
 
 p.category_card_lable{
@@ -285,6 +286,7 @@ div.why_us{
     width: 100%;
     margin-top: 10%;
     margin-bottom:5% ;
+    padding-top: 5%;
 }
 
 div.why_us_lable{
@@ -346,7 +348,6 @@ div.why_us_reasons{
     height: 228px;
     margin-right: 3%;
     border-radius: 0px 16px 16px 0;
-    overflow-x: scroll;
     display: flex;
     align-items: stretch;
     margin-bottom: 10%;
@@ -569,6 +570,31 @@ div.namad{
     transform: scale(1);
 }
 
+img.img_front{
+    width: 77px;
+    height: 78px;
+    opacity: 1;
+    z-index: 1;
+}
+.img_area img{
+    position: absolute;
+    transition: opacity 1s ease-out;  
+}
+
+img.img_front:hover{
+    opacity: 0;
+}
+
+
+img.img_back{
+    width: 77px;
+    height: 70px;
+    padding-top: 2px;
+}
+.special_offers_items_card_img img{
+    width: 77px;
+    height: 78px;
+}
 /* resposive */
 
 @media only screen and (max-width:992px) {
@@ -636,8 +662,17 @@ div.namad{
         height: 500px;
     }
     div.category{
-        height: 100%;
+        height: 160px;
     }
+
+    div.img_area img{
+        top: 40px;
+    }
+
+    a.category_card{
+        height: 150px
+    }
+
     div.why_us{
         display: flex;
         flex-direction:row ;
@@ -668,13 +703,17 @@ div.namad{
 @media screen and (min-width:1200px) {
     div.category{
         position: absolute;
-        height: 250px;
-        width:600px ;
-        top: 350px;
+        top: 460px;
         right: 30px;
-        width: 790px;
-        height: 310px;
+        width: 650px;
+        height: 250px;
     }
+
+    div.category_card{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
     div.show_all_category{
         display: block;
     }
@@ -705,6 +744,18 @@ div.namad{
         float: left;
         margin-left: 10%;
         width: 460px;
+    }
+    div.landing_top{
+        height: 650px;
+    }
+
+    div.ball{
+        width: 715px ;
+        height: 670px ;
+    }
+
+    img.hero_img{
+        width: 600px ;
     }
 }
 
