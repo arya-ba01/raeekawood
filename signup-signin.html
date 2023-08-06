@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <title>راییکا چوب</title>
+    </head>
+<body class="container-fluid p-0">
+    <div class="page_container">
+        <div class=" navbar container-fluid w-100 row m-0 p-0  w-100" style="height: 80px; background-color: #F1F3F1; background-image:none;">
+            <div class="col row d-md-block d-none right">
+                <div class="d-flex flex-row" style="width:313px; height:60px;">
+                    <div class="m-0" style="width:73px;"><a href="index.html"><img src="./picture/Logo.svg" alt="logo"></a></div>
+                    <div class="">
+                        <div class="products_navbar_dropdown" dir="rtl">
+                            <form action="">
+                           <select name="products" class="products">
+                               <option value="" disabled selected hidden>محصولات</option>
+                               <option value="1st_product">محصول 1</option>
+                               <option value="2nd_product">محصول 2</option>
+                               <option value="3rd_product">محصول 3</option>
+                           </select>
+                           </form>
+                       </div>
+                    </div>
+                    <div class="">
+                        <div class="products_follow_up">
+                            <button class="follow_up_button" ><a class="follow_up_button" href="#"> پیگیری محصولات</a></button>
+                          </div> 
+                    </div>                
+                </div>
+            </div>
+            <div class="col">
+               <div class="navbar_left_side">
+                <div class="search_bar">
+                    <button class="search_button">
+                        <a href="#"><img src="./icons/search.svg" alt="search_button"></a>
+                    </button>
+                    <input type="search" class="search_bar" placeholder="جست‌و‌جو در راییکا" dir="rtl" >
+                </div>
+                <div class="cart_profile_icon d-lg-block d-none" >
+                    <div class="profile_icon" >
+                        <button class="profile_icon" >
+                            <a href="#"><img src="./icons/profile.svg" alt="profile_icon" class="profile_icon"></a>
+                        </button>
+                    </div>
+                    <div class="cart_icon" >
+                        <button class="cart_icon">
+                            <a href="#"><img src="./icons/cart.svg" alt="cart_icon" class="cart_icon"></a>
+                        </button>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="box_container">
+            <div class="d-flex pipe_line">
+                <div><p style="color:#959595 ;">فروشگاه راییکا چوب|</p></div>
+                <div><p style="color: #000000;">ورود به حساب کاربری</p></div>
+            </div>
+            <div class="signup_in_box">
+                <div class="sign_in">
+                    <p class="signup_in_title">ورود به حساب کاربری</p>
+                    <form>
+                        <input type="number" class="number_input" placeholder="شماره تلفن همراه">
+                        <input type="text" class="password_input" placeholder="کلمه عبور">
+                        <div class="d-flex">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="cbx">
+                                <label for="cbx" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                                </label>
+                            </div>
+                            <p style="margin-right: 5px;">مرا به خاطر بسپار</p>
+                        </div>
+                    </form>
+                    <a href="#" class="forget_password"><p>کلمه عبور خود را فراموش کرده‌ام</p></a>
+                    <a href="#">
+                        <div class="login_button">
+                            <img src="./icons/login.svg" alt="">
+                            <p>ورود به حساب</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sign_up">
+                    <p class="signup_in_title">ایجاد حساب کاربری</p>
+                    <div class="sign_up_input">
+                        <input type="text" placeholder="نام">
+                        <input type="text" placeholder="نام‌خانوادگی">
+                        <input type="number" placeholder="شماره‌تلفن‌همراه">
+                        <input type="text" placeholder="آدرس‌ایمیل">
+                        <input type="text" placeholder="کلمه عبور(حداقل ۸ کاراکتر)">
+                        <input type="text" placeholder="تکرار کلمه عبور">
+                    </div>
+                    <p>ثبت نام به معنی پذیرش <a href="#"> قوانین و مقررات </a>می‌باشد</p>
+                    <a href="#">
+                        <div class="login_button">
+                            <img src="./icons/signup.svg" alt="">
+                            <p>ایجاد حساب</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footers">
+            <div class="footer_1">
+                <div class="footer_icons">
+                    <div class="footer_icon"><a href="index.html"><img class="footer_icon" src="./icons/footer/home.svg" alt=""></a></div>
+                    <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/cart.svg" alt=""></a></div>
+                    <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/menu.svg" alt=""></a></div>
+                    <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/profile.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="footer_2">
+                <div class="about_us">
+                    <div style="margin-left: 165px;">
+                        <img src="./picture/White_Logo 1.svg" alt="">
+                        <div class="footer_details"><p>با کمک راییکا به طبیعت آسیبی نمی‌رسانیم</p></div>
+                    </div>
+                    <div style="margin-left: 165px;">
+                        <p style="font-size: 18px; color:#E5E7E4;" >دسته بندی محصولات</p>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>سینی</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>بشقاب</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>کاسه</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>ظروف پارت بندی شده</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>کالکشن ها</p></a>
+                    </div>
+                    <div>
+                        <p style="font-size: 18px; color:#E5E7E4; width: 90px;" >راهنمای سایت</p>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>ارتباط با ما</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>سوالات متداول</p></a>
+                        <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>پیگیری سفارشات</p></a>
+                    </div>
+                </div>
+                <div class="namad">
+                    <a href="#"><img class="namad" src="./namad/image 1.svg" alt=""></a>
+                    <a href="#"><img class="namad" src="./namad/image 2.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
