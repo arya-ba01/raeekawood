@@ -17,6 +17,10 @@
     font-family: yekan_bakh_fanum;
     src: url(./fonts/Yekan\ Bakh\ FaNum\ 07\ Heavy.ttf);
 }
+@font-face{
+    font-family: yekan_bakh_light;
+    src: url(./fonts/YekanBakh_Light.ttf);
+}
 
 html {
     text-rendering: optimizeLegibility !important;
@@ -833,6 +837,300 @@ div.sign_up a{
 div.sign_up p{
     font-size: 14px;
 }
+/* profile page */
+div.box_container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2000px;
+}
+
+div.profile_box_container{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.profile_details{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+}
+
+div.profile_details img{
+    border-radius: 50%;
+    width: 136px;
+    height: 136px;
+    margin-right: 95px;
+    margin-top: 42px;
+}
+
+div.profile_details h2{
+    font-family: yekan_bakh;
+    font-size: 24px;
+    color: #666A6E;
+    margin-top: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+div.profile_details_credit{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+div.profile_details_credit p{
+    width: 50%;
+    text-align: center;
+    font-family: yekan_bakh_fanum ;
+}
+div.add_credit{
+    background-color: #65885D;
+    color: #FFFFFF;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    width: 216px;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+div.add_credit button img{
+    width: 12px;
+    height: 20px;
+    margin: 0px;
+}
+div.add_credit button{
+    width: 216px;
+    height: 48px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+}
+div.add_credit button p{
+    color: #FFFFFF;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    margin: 0px;
+    margin-right: 8px;
+}
+div.profile_details_button{
+    margin-top: 46px;
+    margin-right: 56px;
+}
+div.profile_details_button button{
+    width: 216px;
+    height: 30px;
+    margin-bottom: 24px;
+    background-color: #FFFFFF;
+    color: #666A6E;
+    text-align: start;
+    font-family: yekan_bakh_light;
+    font-size: 16px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px ;
+    border-color: #EDEDED;
+    padding-bottom: 8px;
+}
+
+div.profile_details_button button img{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+p.info_title{
+    font-family: yekan_bakh;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    margin-right: 16px;
+    margin-top: 72px;
+    margin-bottom: 10px;
+}
+div.img_upload{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 324px;
+}
+
+div.img_upload img{
+    width: 136px;
+    height: 136px;
+    margin-bottom: 48px;
+}
+
+div.file_input_lable{
+    width: 216px;
+    height: 48px;
+    background-color: #65885D;
+    color: #FFFFFF;
+    border-radius: 8px;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+div.file_input_lable img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+div.file_input_lable p{
+    font-family: yekan_bakh_light;
+    font-size: 16px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+div.img_upload input{
+    display: none;
+}
+
+div.info_submit{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    margin-top: 24px;
+    height: 484px;
+    padding-right: 32px;
+    padding-top: 18px;
+}
+
+div.info_filed{
+    margin-top: 24px;
+    background-color: #FAFAFA;
+    border-bottom-style:solid ;
+    border-bottom-color:#95B28F ;
+    border-bottom-width: 1px;
+    border-radius: 6px;
+    height: 56px;
+    width: 260px;
+}
+
+div.info_filed_title{
+    font-family: yekan_bakh_light;
+    color: #95B28F;
+    font-size: 15px;
+    display: flex;
+    margin-right: 12px;
+}
+
+div.info_filed input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 50%;
+    padding-right: 12px;
+    font-family: yekan_bakh_light;
+    font-size: 15px;
+    color: #525E67;
+}
+
+div.info_filed input:focus{
+    border: none;
+    outline: none;
+}
+
+button.submit_info{
+    width: 148px;
+    height: 48px;
+    background-color: #65885D;
+    border-radius: 8px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: yekan_bakh_light;
+    font-size: 15px;
+    margin-top: 48px;
+    float: left;
+    margin-left: 34px;
+}
+
+button.submit_info p{
+    margin-top: 18px;
+    margin-right: 8px;
+} 
+
+div.password-chanege{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    margin-top: 24px;
+    margin-bottom: 100px;
+    height: 453px;
+    padding-right: 32px;
+}
+div.password-chanege p{
+    font-family: yekan_bakh;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+div.password_change_filed input{
+    margin-bottom: 32px;
+    width: 260px;
+    height: 56px;
+    font-family: yekan_bakh_light;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    border-color: #9EA49D;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    padding-right: 12px;
+}
+div.password_change_filed input:focus{
+    border-color: #9EA49D;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+button.passwors_change_submit{
+    width: 148px;
+    height: 48px;
+    background-color: #65885D;
+    border-radius: 8px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: yekan_bakh_light;
+    font-size: 15px;
+    float: left;
+    margin-left: 34px;
+}
+button.passwors_change_submit p{
+    color: #FFFFFF;
+    font-family: yekan_bakh_light;
+    font-size: 14px;
+    font-weight: 400;
+}
 /* resposive */
 
 @media only screen and (max-width:992px) {
@@ -852,7 +1150,6 @@ div.sign_up p{
         justify-content: center;
         margin-right: 2%;
     }
-   
 }
 
 @media only screen and (min-width:767px){
@@ -914,6 +1211,40 @@ div.sign_up p{
         border-right-width: 1px ;
         padding-right: 100px;
         height: 90%;
+    }
+
+    div.profile_box_container{
+        flex-direction: row;
+        width: 80%;
+    }
+    div.profile_details{
+        height: 710px;
+        margin-left: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 42px;
+    }
+    div.profile_details img{
+        margin: 0;
+    }
+
+    p.info_title{
+        margin-top: 0 ;
+    }
+    div.info_filed{
+        margin-left: 30px;
+    }
+    div.profile_details_button{
+        margin-left: 32px;
+    }
+    div.add_credit{
+        margin: 0;
+    }
+    div.profile_details_button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
