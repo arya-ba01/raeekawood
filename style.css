@@ -744,6 +744,10 @@ input.save_password_box{
     border-width: 2px;
 }
 
+button.sign_in_submit_button{
+    float: left;
+}
+
 .checkbox-wrapper input[type="checkbox"] {
     display: none;
     visibility: hidden;
@@ -828,6 +832,10 @@ a.forget_password{
     width: 700;
 }
 
+button.sign_up-submit_button{
+    float: left;
+}
+
 div.login_button{
     background-color: #65885D;
     width: 150px;
@@ -838,7 +846,6 @@ div.login_button{
     color: #FFFFFF;
     font-size: 14px;
     display: flex;
-    margin-top: 50px;
 }
 
 div.login_button img{
@@ -1286,7 +1293,7 @@ div.plp_page_product_card img{
         margin-left:5% ;
         background-color: #FFFFFF;
         border-radius:12px ;
-        height: 60%;
+        height: 800px;
     }
 
     div.sign_in{
@@ -1564,6 +1571,9 @@ div.plp_page_product_card img{
         font-size: 16px;
     }
     p.signup_in_title{
+        font-size: 24px;
+    }
+    div.sign_up p:first-child{
         font-size: 24px;
     }
     div.info_submit{
