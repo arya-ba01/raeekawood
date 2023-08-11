@@ -1182,6 +1182,52 @@ button.passwors_change_submit p{
     font-size: 14px;
     font-weight: 400;
 }
+
+div.info_filed_title{
+    height: 20px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* plp page */
+div.plp_container{
+    width: 90%;
+    height: 100%;
+    margin: 32px 16px 32px 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div.plp_page_product_card{
+    width: 156px;
+    height: 221px;
+    border-style: solid;
+    border-color: #E7E7E7;
+    border-width: 1px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.plp_page_product_card_description{
+    width: 136px;
+    height: 112px;
+    font-family: yakan_bakh;
+}
+
+div.plp_page_product_card img{
+    width: 77px;
+    height: 77px;
+}
+
 /* resposive */
 
 @media only screen and (max-width:992px) {
@@ -1310,6 +1356,13 @@ button.passwors_change_submit p{
     p.title{
         margin-left: 24px;
     }
+    div.pipe_line{
+        margin-top: 0;
+        padding-top: 100px;
+    }
+    div.box_container{
+        height: 100%;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -1363,8 +1416,29 @@ button.passwors_change_submit p{
     div.reasons_card{
         margin-left: 15px;
     }
-
-    
+    div.pipe_line{
+        margin-top: 0;
+        padding-top: 100px;
+    }
+    div.id_change{
+        display: flex;
+        flex-direction: row;
+    }
+    div.info_submit{
+        margin-top: 0;
+        margin-right: 20px;
+    }
+    div.img_upload{
+        height: 484px;
+        width: 240px;
+        justify-content:space-evenly;
+    }
+    div.password_change_filed input{
+        width: 90%;
+    }
+    div.box_container{
+        height: 100%;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -1491,6 +1565,48 @@ button.passwors_change_submit p{
     }
     p.signup_in_title{
         font-size: 24px;
+    }
+    div.info_submit{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 324px;
+    }
+    button.submit_info{
+        grid-column: 2;
+        justify-self: end;
+    }
+    div.img_upload{
+        height: 324px;
+    }
+    div.password_change_fileds{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+    div.password_change_filed{
+        width: 280px;
+    }
+    div.password-chanege{
+        display: flex;
+        flex-direction: column;
+        height: 316px;
+        padding-top: 20px;
+    }
+    div.password-chanege p{
+        font-size: 24px;
+    }
+    button.passwors_change_submit{
+        align-self: self-end;
+        margin-left: 68px;
+    }
+    button.passwors_change_submit p{
+        font-size: 14px;
+    }
+    p.info_title{
+        font-size: 24px;
+    }
+    div.box_container{
+        height: 100%;
     }
 }
 
