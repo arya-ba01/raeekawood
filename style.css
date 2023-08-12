@@ -1576,14 +1576,18 @@ div.plp_page_product_card img{
     div.sign_up p:first-child{
         font-size: 24px;
     }
-    div.info_submit{
+    form.info_submit{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        height: 324px;
+    }
+    div.info_submit{
         height: 324px;
     }
     button.submit_info{
         grid-column: 2;
         justify-self: end;
+        margin-bottom: 40px;
     }
     div.img_upload{
         height: 324px;

@@ -85,50 +85,56 @@
                     <div class="id_change">
                         <div class="img_upload">
                             <img src="./icons/profile.svg" alt="">
-                            <label for="file_input">
-                                <div class="file_input_lable">
-                                  <img src="./icons/upload.svg" alt="">
-                                  <p>آپلود عکس</p>  
-                                </div>
-                            </label>
-                            <input type="file" id="file_input" />
+                            <form action="">
+                                <label for="file_input">
+                                    <div class="file_input_lable">
+                                    <img src="./icons/upload.svg" alt="">
+                                    <p>آپلود عکس</p>  
+                                    </div>
+                                </label>
+                                <input type="file" id="file_input" />
+                            </form>
                         </div>
                         <div class="info_submit">
-                            <div class="info_filed">
-                                <div class="info_filed_title">
-                                    <p>نام</p>
-                                    <p style="color: #B90202;">*</p>
+                            <form action="" class="info_submit">
+                                <div class="info_filed">
+                                    <div class="info_filed_title">
+                                        <p>نام</p>
+                                        <p style="color: #B90202;">*</p>
+                                    </div>
+                                    <input type="text" >
                                 </div>
-                                <input type="text" >
-                            </div>
-                            <div class="info_filed">
-                                <div class="info_filed_title">
-                                    <p>نام خانوادگی</p>
-                                    <p style="color: #B90202;">*</p>
+                                <div class="info_filed">
+                                    <div class="info_filed_title">
+                                        <p>نام خانوادگی</p>
+                                        <p style="color: #B90202;">*</p>
+                                    </div>
+                                    <input type="text" >
                                 </div>
-                                <input type="text" >
-                            </div>
-                            <div class="info_filed">
-                                <div class="info_filed_title">
-                                    <p>شماره تلفن همراه</p>
-                                    <p style="color: #B90202;">*</p>
+                                <div class="info_filed">
+                                    <div class="info_filed_title">
+                                        <p>شماره تلفن همراه</p>
+                                        <p style="color: #B90202;">*</p>
+                                    </div>
+                                    <input type="text" >
                                 </div>
-                                <input type="text" >
-                            </div>
-                            <div class="info_filed">
-                                <div class="info_filed_title">
-                                    <p>آدرس ایمیل</p>
+                                <div class="info_filed">
+                                    <div class="info_filed_title">
+                                        <p>آدرس ایمیل</p>
+                                    </div>
+                                    <input type="text" >
                                 </div>
-                                <input type="text" >
-                            </div>
-                            <button class="submit_info">
-                                <img src="./icons/approve.svg" alt="">
-                                <p>ثبت‌اطلاعات</p>
-                            </button>
+                                <button type="submit" class="submit_info">
+                                    <img src="./icons/approve.svg" alt="">
+                                    <p>ثبت‌اطلاعات</p>
+                                </button>
+                            </form>
                         </div>
+                           
                     </div>
                     <div class="password-chanege">
-                         <p>تغییر کلمه عبور</p>
+                      <form action="">
+                        <p>تغییر کلمه عبور</p>
                         <div class="password_change_fileds">
                             <div class="password_change_filed">
                                 <input type="text" placeholder="کلمه عبور جدید">
@@ -140,10 +146,11 @@
                                 <input type="text" placeholder="کلمه عبور فعلی">
                             </div>
                         </div>
-                         <button class="passwors_change_submit">
+                         <button type="submit" class="passwors_change_submit">
                             <img src="./icons/approve.svg" alt="">
                             <p>تغییر کلمه عبور</p>
                          </button>
+                      </form>
                     </div>
                 </div>
                 </div>
