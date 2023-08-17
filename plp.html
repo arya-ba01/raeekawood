@@ -57,20 +57,189 @@
             </div>
         </div>
         <div class="d-flex pipe_line">
-            <div><p style="color:#959595 ;">فروشگاه راییکا چوب|</p></div>
+            <div><p style="color:#959595 ;">فروشگاه راییکا چوب | محصولات |</p></div>
             <div><p style="color: #000000;">کالکشن ها</p></div>
         </div>
-        <div class="plp_container">
-            <div class="plp_page_product_card">
-                <img src="./picture/products/1-1.svg" alt="">
-                <div class="plp_page_product_card_description">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <button></button>
+       <div class="plp_page">
+        <div class="plp_page_filter">
+            <div class="plp_page_filter_container">
+                <button  onclick="myFunction()">
+                    <img src="./icons/flliter_by.svg" alt="">
+                </button>
+                <div class="plp_filter_drop_down" id="myDropdown">
+                    <p>مرتب‌سازی بر اساس:</p>
+                    <a href="#">جدیدترین‌ها</a>
+                    <a href="#">ارزان‌ترین‌ها</a>
+                    <a href="#">گران‌ترین‌ها</a>
+                    <a href="#">محبوب‌ترین‌ها</a>
+                </div>
+            </div>
+            <div class="plp_page_filter_container">
+                <button style="float: left; margin-left: 15%;">
+                    <img src="./icons/filters.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="plp_page_filter_2">
+            <div class="plp_page_filter_search_bar">
+                <p>جست و جو در نتایج</p>
+                <form action="">
+                    <input type="text" placeholder="جست و جو نام یا کد محصول">
+                </form>
+            </div>
+            <div class="plp_page_price_filter">
+                <p>فیلتر بازه قیمتی</p>
+                <fieldset class="filter-price">
+                    <div class="price-field">
+                      <input type="range" min="50000" max="10000000" value="7000000" id="upper">
+                      <input type="range" min="50000" max="10000000" value="4000000" id="lower">
+                    </div>
+                    <div class="price-wrap">
+                      <div class="price-container">
+                        <div class="price-wrap-1">
+                          <label for="one">تومان</label>
+                          <input id="one">
+                        </div>
+                        <div class="price-wrap-2">
+                          <label for="two">تومان</label>
+                          <input id="two">
+                        </div>
+                      </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="plp_page_category_filter">
+                <p>فیلتر دسته‌بندی‌‌های محصولات</p>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="6_catagory">
+                    <label for="6_catagory">تخفیف‌دار</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="1_catagory">
+                    <label for="1_catagory">سینی</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="2_catagory">
+                    <label for="2_catagory">بشقاب</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="3_catagory">
+                    <label for="3_catagory">کالکشن‌ها</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="4_catagory">
+                    <label for="4_catagory">ظروف پارتیشن‌بندی شده</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="5_catagory">
+                    <label for="5_catagory">کاسه</label>
+                </div>
+            </div>
+            <div class="plp_page_category_filter" style="height: 313px;">
+                <p>فیلتر سایز</p>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="7_catagory">
+                    <label for="7_catagory">خیلی کوچک</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="8_catagory">
+                    <label for="8_catagory">کوچک</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="9_catagory">
+                    <label for="9_catagory">متوسط</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="10_catagory">
+                    <label for="10_catagory">بزرگ</label>
+                </div>
+                <div class="plp_page_fliter_catagorys">
+                    <input type="checkbox" id="11_catagory">
+                    <label for="11_catagory">خیلی بزرگ</label>
                 </div>
             </div>
         </div>
+            <div style="display: flex; flex-direction:column;">
+                <div class="plp_page_filter_by">
+                    <div>
+                        <p>مرتب‌سازی بر اساس:</p>
+                    </div>
+                    <div>
+                        <button>جدیدترین‌ها</button>
+                        <button>ارزان‌ترین‌ها</button>
+                        <button>گران‌ترین‌ها</button>
+                        <button>محبوب‌ترین‌ها</button>
+                    </div>
+                </div>
+                <div class="plp_container">
+                    <div class="plp_page_product_card">
+                        <img src="./picture/products/1-1.svg" alt="">
+                        <div class="plp_page_product_card_description">
+                            <div class="plp_page_product_card_description_paragraph">
+                                <p>ظرف دو دایره پارتیشن‌بندی‌شده </p>
+                                <p style="color: #BDBDBD;">مدل R35130</p>
+                                <p>98,000  تومان</p>
+                            </div>
+                            <button>
+                                <img src="./icons/Add_Button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="plp_page_product_card">
+                        <img src="./picture/products/1-1.svg" alt="">
+                        <div class="plp_page_product_card_description">
+                            <div class="plp_page_product_card_description_paragraph">
+                                <p>ظرف دو دایره پارتیشن‌بندی‌شده </p>
+                                <p style="color: #BDBDBD;">مدل R35130</p>
+                                <p>98,000  تومان</p>
+                            </div>
+                            <button>
+                                <img src="./icons/Add_Button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="plp_page_product_card">
+                        <img src="./picture/products/1-1.svg" alt="">
+                        <div class="plp_page_product_card_description">
+                            <div class="plp_page_product_card_description_paragraph">
+                                <p>ظرف دو دایره پارتیشن‌بندی‌شده </p>
+                                <p style="color: #BDBDBD;">مدل R35130</p>
+                                <p>98,000  تومان</p>
+                            </div>
+                            <button>
+                                <img src="./icons/Add_Button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="plp_page_product_card">
+                        <img src="./picture/products/1-1.svg" alt="">
+                        <div class="plp_page_product_card_description">
+                            <div class="plp_page_product_card_description_paragraph">
+                                <p>ظرف دو دایره پارتیشن‌بندی‌شده </p>
+                                <p style="color: #BDBDBD;">مدل R35130</p>
+                                <p>98,000  تومان</p>
+                            </div>
+                            <button>
+                                <img src="./icons/Add_Button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="plp_page_product_card">
+                        <img src="./picture/products/1-1.svg" alt="">
+                        <div class="plp_page_product_card_description">
+                            <div class="plp_page_product_card_description_paragraph">
+                                <p>ظرف دو دایره پارتیشن‌بندی‌شده </p>
+                                <p style="color: #BDBDBD;">مدل R35130</p>
+                                <p>98,000  تومان</p>
+                            </div>
+                            <button>
+                                <img src="./icons/Add_Button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
         <div class="footers">
             <div class="footer_1">
                 <div class="footer_icons">
@@ -107,4 +276,5 @@
                 </div>
             </div>
         </div>
+        <script src="./script.js"></script>
     </div>
