@@ -567,6 +567,7 @@ border-top-color:#F3F6F4 ;
 border-top-style: solid;
 border-width: 1px;
 background-color: rgba(255, 255, 255, 0.7);
+z-index: 2;
 }
  
 
@@ -896,6 +897,31 @@ div.sign_up p{
     font-size: 14px;
 }
 /* profile page */
+div.adding_credit{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+div.adding_credit_content{
+    font-family: yekan_bakh;
+    font-size: 24px;
+    color: #000000;
+    width: 856px;
+    height: 446px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 div.box_container{
     margin-top: 80px;
     display: flex;
@@ -1653,6 +1679,383 @@ div.plp_page_filter_by div button{
 div.plp_page_filter_by div p{
     margin: 0;
 }
+
+/* pdp page */
+div.slider_demo_row{
+    position: relative;
+    width: 335px;
+    padding: 12px 13px 12px 10px;
+    justify-content: center;
+}
+
+div.pdp_page_slider{
+    display: none;
+}
+
+div.pdp_page_slider img{
+    width: 330px;
+    height: 330px;
+    border-radius: 12px;
+    border-style:solid ;
+    border-width: 1px;
+    border-color:#DADEDA ;
+}
+
+img.pdp_page_slider_demo {
+    border-radius: 6px;
+    cursor: pointer;
+    object-fit: cover;
+    width: 71px;
+    height: 71px;
+    margin-right: 4px;
+    border-style:solid ;
+    border-width: 1px;
+    border-color:#DADEDA ;
+}
+
+img.pdp_page_slider_demo:hover {
+    opacity: 1;
+}
+
+.active{
+    opacity: 1;
+}
+
+div.pdp_page_slider_demo{
+    float: left;
+    width: 25%;
+
+}
+
+div.slider_demo_row:after{
+ content: "";
+ display: table;
+ clear: both;
+}
+
+button.pdp_page_slider_arrow{
+    background-color: #65885D;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: 24px;
+    z-index: 1;
+}
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+button.pdp_page_slider_arrow:hover{
+    background-color: #384c34;
+}
+button.pdp_page_slider_arrow img{
+    vertical-align: unset;
+}
+
+div.pdp_page_product{
+    padding: 16px;
+}
+
+div.pdp_page_product_description{
+    height: 510px;
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+
+div.pdp_page_product_description_fav_share{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+div.pdp_page_product_description_fav_share button{
+    display: flex;
+    font-family: yekan_bakh;
+    font-size:14px;
+}
+
+div.pdp_page_product_description_fav_share button p{
+    color: #A4ABB6;
+    margin-right: 8px;
+}
+
+div.pdp_page_product_description_model{
+    font-family: yekan_bakh;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+div.pdp_page_product_description_model p:first-child{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+div.pdp_page_product_description_model p span{
+    font-weight: 700;
+}
+
+div.pdp_page_product_description_sizing{
+    font-family: yekan_bakh;
+}
+
+div.pdp_page_product_description_sizing p{
+    font-size: 13px;
+    font-weight:700;
+    font-family: yekan_bakh_fanum;
+}
+
+div.pdp_page_product_description_sizing div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    justify-content: end;
+}
+div.pdp_page_product_description_sizing div button{
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #65885D;
+    color: #65885D;
+    margin-bottom: 12px;
+}
+
+div.pdp_page_product_description_sizing div button:active{
+    background-color:#65885D ;
+    color: #FFFFFF;
+}
+div.pdp_page_product_description_sizing div button:hover{
+    background-color:#65885D ;
+    color: #FFFFFF;
+}
+
+div.pdp_page_product_description_price p{
+    font-family: yekan_bakh;
+    color: #508750;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+div.pdp_page_product_description_price div{
+    display: flex;
+    align-items: center;
+}
+div.pdp_page_product_description_price div div{
+    width: 109px;
+    height: 48px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #65885D;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+div.pdp_page_product_description_price div div button{
+    margin: 0px 12px 0px 12px;
+}
+div.pdp_page_product_description_price div p{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+button.pdp_page_add_to_cart{
+    width: 209px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    background-color: #65885D;
+    border-radius: 8px;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+button.pdp_page_add_to_cart p{
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+button.pdp_page_add_to_cart img{
+    margin-left: 8px;
+}
+div.pdp_page_product_info{
+    width: 330px;
+    margin-right: 16px;
+    font-family: yekan_bakh;
+    margin-bottom: 40px;
+    margin-bottom: 32px;
+}
+p.pdp_page_product_info_title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #666A6E;
+}
+div.pdp_page_product_info div p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7B847B;
+}
+div.pdp_page_product_card{
+    width: 240px;
+    height: 308px;
+    border-style: solid;
+    border-color: #E7E7E7;
+    border-width: 1px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:12px ;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 18px;
+    padding: 12px 24px 24px 24px;
+}
+div.pdp_page_product_card img{
+    width: 132px;
+}
+div.pdp_page_product_card div button img{
+    width: 40px;
+    float: left;
+}
+div.pdp_page_product_card div button{
+    float: left;
+}
+div.pdp_page_product_card_description{
+    width: 200px;
+    height: 112px;
+    font-family: yakan_bakh;
+    padding-top: 20px;
+}
+
+div.pdp_page_product_card_description_paragraph{
+    width: 136px;
+    font-family: yekan_bakh_fanum;
+    font-size: 12px;
+}
+div.pdp_page_product_card_description_paragraph p {
+    margin-bottom: 5px;
+}
+div.pdp_page_product_row{
+    display: flex;
+    overflow-x: scroll; 
+    margin-right: 16px;
+}
+
+p.pdp_page_similar_product{
+    font-family: yekan_bakh;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-right: 16px;
+}
+
+div.pdp_page_similar_product{
+    margin-bottom: 40px;
+}
+
+div.pdp_page_comment{
+    height: 900px;
+    padding-right: 16px;
+}
+div.pdp_page_costumer_comment{
+    width: 330px;
+    background-color: #E9F0E7;
+    border-radius: 12px;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    color: #7B847B;
+    padding-bottom: 2px;
+    padding-top: 0.1px;
+    margin-bottom: 12px;
+}
+div.pdp_page_costumer_comment_title{
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: solid 1px #D4D4D4 ;
+    width: 300px;
+    margin: 12px 12px 10px 12px;
+}
+
+div.pdp_page_costumer_comment_inner{
+    margin: 0px 12px 12px 12px;
+}
+a{
+    text-decoration: none;
+}
+div.pdp_page_comment_title{
+    display: flex;
+    width: 150px;
+    font-family: yekan_bakh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px ;
+}
+div.pdp_page_comment_title p{
+    font-size: 18px;
+    color: #666A6E;
+    font-weight: 700;
+    margin: 0;
+}
+div.pdp_page_comment_title a{
+    color: #65885D;
+    font-size: 14px;
+    margin-right: 12px;
+}
+div.pdp_page_costumer_comment_answer{
+    width: 330px;
+    background-color: #F0EAE7;
+    border-radius: 12px;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    color: #7B847B;
+    padding-bottom: 2px;
+    padding-top: 0.1px;
+    margin-bottom: 40px;
+}
+
+div.pdp_page_comment_fild{
+    width: 330px;
+    height: 420px;
+}
+div.pdp_page_comment_fild form textarea{
+    width: 330px;
+    height: 350px;
+    resize: none;
+    border-radius: 12px;
+    border: solid 1px #C8CCC7;
+    padding: 28px 12px;
+    margin-bottom: 24px;
+}
+div.pdp_page_comment_fild form textarea::placeholder{
+    font-size: 16px;
+    font-family: yekan_bakh;
+    color: #B3B8B2;
+}
+
+div.pdp_page_comment_fild form button{
+    float: left;
+    display: flex;
+    background-color: #65885D;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: yekan_bakh;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+div.pdp_page_comment_fild form button p{
+    margin: 0 8px;
+}
 /* resposive */
 
 @media screen and (min-width:576px) {
@@ -2140,7 +2543,7 @@ div.plp_page_filter_by div p{
     }
 
     div.page_container{
-        width: 1550px;
+        /* width: 1550px; */
         display: flex;
         flex-direction: column;
     }
