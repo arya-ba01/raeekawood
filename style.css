@@ -2058,6 +2058,38 @@ div.pdp_page_comment_fild form button p{
 }
 /* resposive */
 
+@media screen and (min-width:361px) {
+    div.pdp_page_container{
+        margin-right: 5%;
+    }
+    div.pdp_page_product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.pdp_page_product_description{
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+    }
+    div.pdp_page_costumer_comment{
+        width: 90%;
+    }
+    div.pdp_page_costumer_comment_answer{
+        width: 90%;
+    }
+    div.pdp_page_costumer_comment_title{
+        width: 90%;
+    }
+    div.pdp_page_comment_fild{
+        width: 90%;
+    }
+    div.pdp_page_comment_fild form textarea{
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:576px) {
     div.plp_container{
         grid-template-columns: repeat(3, 1fr);
@@ -2216,6 +2248,69 @@ div.pdp_page_comment_fild form button p{
     }
     div.plp_page_filter_by{
         display: flex;
+    }
+    div.pdp_page_product_image_slider{
+        display: flex;
+    }
+    div.slider_demo_row{
+        display: flex;
+        flex-direction: column;
+    }
+    button.pdp_page_slider_arrow{
+        rotate: 90deg;
+        right: 40px;
+    }
+    button.next{
+        bottom: 35px;
+    }
+    button.prev{
+      top: 0;
+    }
+    div.pdp_page_slider_demo{
+        width: 80px;
+        height: 80px;
+    }
+    div.pdp_page_product_image{
+        width: 400px ;
+        height: 400px;
+    }
+    div.pdp_page_slider img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (min-width:850px) {
+    div.pdp_page_slider_demo{
+        width: 120px;
+        height: 120px;
+    }
+    div.pdp_page_slider_demo img{
+        width: 120px;
+        height: 120px;
+    }
+    div.pdp_page_product_image{
+        width: 500px;
+        height: 500px;
+    }
+    div.pdp_page_slider img{
+        width: 500px;
+        height: 500px;
+    }
+    button.pdp_page_slider_arrow{
+        rotate: 90deg;
+        right: 62px;
+    }
+    button.next{
+        bottom: 10px;
+    }
+    button.prev{
+        top: -25px;
+    }
+    div.pdp_page_slider_demo{
+        margin-bottom: 10px;
+    }
+    div.pdp_page_product_image{
+        padding-top: 15px;
     }
 }
 @media  screen and (min-width:950px) {
