@@ -2057,6 +2057,55 @@ div.pdp_page_comment_fild form button{
 div.pdp_page_comment_fild form button p{
     margin: 0 8px;
 }
+/* comment section */
+div.comment_page{
+    margin: 32px 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+p.comment_page_title{
+    font-family: yekan_bakh;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+div.admin_comment_answer{
+    width: 100%;
+    background-color: #F0EAE7;
+    padding: 16px 12px;
+    border-radius: 12px;
+    margin-top: 12px;
+    height: auto;
+}
+div.customer_comment_title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px #D4D4D4;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7B847B;
+}
+div.customer_comment_title p {
+    margin: 0;
+}
+div.customer_comment_body{
+    margin:10px 12px 16px 12px ;
+    font-family: yekan_bakh;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7B847B;
+}
+div.customer_comment{
+    width: 100%;
+    background-color: #E9F0E7;
+    padding: 16px 12px;
+    border-radius: 12px;
+    margin-top: 12px;
+    height: auto;
+}
 /* resposive */
 
 @media screen and (min-width:361px) {
@@ -2282,6 +2331,14 @@ div.pdp_page_comment_fild form button p{
     div.pdp_page_product_description_sizing div {
         grid-template-columns: repeat(5, 1fr);
     }
+    div.customer_comment{
+        width: 75%;
+        float: right;
+    }
+    div.admin_comment_answer{
+        width: 75%;
+        float: left;
+    }
 }
 @media screen and (min-width:850px) {
     div.pdp_page_slider_demo{
@@ -2424,6 +2481,30 @@ div.pdp_page_comment_fild form button p{
         width: 100%;
         padding-left: 72px;
     }
+    div.customer_comment{
+        width: 55%;
+        float: right;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    div.admin_comment_answer{
+        width: 60%;
+        float: left;
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    div.customer_comment_body{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    div.customer_comment_title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    div.comment_page{
+        margin: 64px 73px;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -2730,6 +2811,9 @@ div.pdp_page_comment_fild form button p{
         right: 20%;
     }
     div.pdp_page_container{
+        width: 1440px;
+    }
+    div.comment_page{
         width: 1440px;
     }
 }
