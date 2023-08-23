@@ -1770,6 +1770,7 @@ div.pdp_page_product_description_fav_share{
     display: flex;
     flex-direction: column;
     height: 80px;
+    padding-top: 80px;
 }
 div.pdp_page_product_description_fav_share button{
     display: flex;
@@ -2278,6 +2279,9 @@ div.pdp_page_comment_fild form button p{
         width: 400px;
         height: 400px;
     }
+    div.pdp_page_product_description_sizing div {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 @media screen and (min-width:850px) {
     div.pdp_page_slider_demo{
@@ -2397,6 +2401,28 @@ div.pdp_page_comment_fild form button p{
         grid-template-columns: repeat(4, 1fr);
         width: 70%;
         align-items: end;
+    }
+    div.pdp_page_product_description_sizing div button{
+        width: 120px;
+        height: 60px;
+    }
+    div.pdp_page_product_info{
+        width: 90%;
+    }
+    div.pdp_page_costumer_comment{
+        width: 795px;
+        height: 132px;
+        float: right;
+    }
+    div.pdp_page_costumer_comment_answer{
+        width: 795px;
+        height: 132px;
+        float: left;
+        margin-left: 72px;
+    }
+    div.pdp_page_comment_fild{
+        width: 100%;
+        padding-left: 72px;
     }
 }
 
@@ -2595,6 +2621,27 @@ div.pdp_page_comment_fild form button p{
     div.plp_page_product_card_description{
         padding: 5px;
     }
+    div.pdp_page_product{
+        flex-direction: row-reverse;
+    }
+    div.pdp_page_product_image_slider{
+        width: 600px;
+    }
+    div.pdp_page_product_description_sizing div{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    div.pdp_page_product_description{
+        width: 458px;
+    } 
+    div.pdp_page_product{
+        width: 100%;
+        justify-content: start;
+    }
+    div.pdp_page_product_description_sizing div button{
+        width: 80px;
+        height: 40px;
+    }
+
 }
 @media screen and (min-width:1300px) {
     div.plp_page_product_card{
@@ -2622,6 +2669,42 @@ div.pdp_page_comment_fild form button p{
     div.plp_page_product_card_description_paragraph{
         width: 192px;
     }
+    div.pdp_page_product_image_slider{
+        width: 745px;
+        height: 650px;
+        justify-content: space-between;
+    }
+    div.pdp_page_slider img{ 
+        width: 595px;
+        height: 595px;
+    }
+    div.slider_demo_row{
+        width: 134px;
+        padding: 0;
+    }
+    div.pdp_page_slider_demo{
+        width: 134px;
+        height: 134px;
+    }
+    div.pdp_page_slider_demo img{
+        width: 134px;
+        height: 134px;
+    }
+    button.pdp_page_slider_arrow {
+        width: 32px;
+        height: 32px;
+        right: 51px;
+    }
+    button.pdp_page_slider_arrow img{
+        width: 32px;
+        height: 32px;
+    }
+    button.next{
+       bottom: 30px; 
+    }
+    button.prev{
+        top: -5px;
+    }
 }
 @media screen and (max-width:1550px){
     body{
@@ -2645,5 +2728,8 @@ div.pdp_page_comment_fild form button p{
 
     div.category{
         right: 20%;
+    }
+    div.pdp_page_container{
+        width: 1440px;
     }
 }
