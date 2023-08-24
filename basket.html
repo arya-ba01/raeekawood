@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>راییکا چوب</title>
+</head>
+<body class="container-fluid p-0">
+   <div class="page_container">
+    <div class=" navbar container-fluid w-100 row m-0 p-0  w-100" style="height: 80px;">
+        <div class="col row d-md-block d-none right">
+            <div class="d-flex flex-row" style="width:313px; height:60px;">
+                <div class="m-0" style="width:73px;"><img src="./picture/Logo.svg" alt="logo"></div>
+                <div class="">
+                    <div class="products_navbar_dropdown" dir="rtl">
+                        <form action="">
+                       <select name="products" class="products">
+                           <option value="" disabled selected hidden>محصولات</option>
+                           <option value="1st_product">محصول 1</option>
+                           <option value="2nd_product">محصول 2</option>
+                           <option value="3rd_product">محصول 3</option>
+                       </select>
+                       </form>
+                   </div>
+                </div>
+                <div class="">
+                    <div class="products_follow_up">
+                        <button class="follow_up_button" ><a class="follow_up_button" href="#"> پیگیری سفارشات</a></button>
+                      </div> 
+                </div>                
+            </div>
+        </div>
+        <div class="col">
+           <div class="navbar_left_side">
+            <div class="search_bar">
+                <button class="search_button">
+                    <a href="#"><img src="./icons/search.svg" alt="search_button"></a>
+                </button>
+                <input type="search" class="search_bar" placeholder="جست‌و‌جو در راییکا" dir="rtl" >
+            </div>
+            <div class="cart_profile_icon d-lg-block d-none" >
+                <div class="profile_icon" >
+                    <button class="profile_icon" >
+                        <a href="signup-signin.html"><img src="./icons/profile.svg" alt="profile_icon" class="profile_icon"></a>
+                    </button>
+                </div>
+                <div class="cart_icon" >
+                    <button class="cart_icon">
+                        <a href="#"><img src="./icons/cart.svg" alt="cart_icon" class="cart_icon"></a>
+                    </button>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="page_body">
+        <div class="d-flex pipe_line">
+            <div><p style="color:#959595 ;">فروشگاه راییکا چوب | سبد خرید شما |</p></div>
+            <div><p style="color: #000000;">   تایید سبد خرید</p></div>
+        </div>
+        <div class="basket_page">
+            <form action="">
+                <div class="basket_page_factor">
+                    <div class="basket_page_factor_top">
+                        <p  class="basket_page_factor_title">فاکتور خرید شما</p>
+                        <div class="basket_page_total">
+                            <p style="color: #508750;">+</p>
+                            <p>مجموع سفارش</p>
+                            <p style="font-weight: 700;">۸۰۰,۰۰۰ تومان</p>
+                        </div>
+                        <div class="basket_page_off">
+                            <p style="color: #508750;">-</p>
+                            <p>مجموع تخفیف‌ها</p>
+                            <p style="font-weight: 700;">۲۰,۰۰۰ تومان</p>  
+                        </div>
+                        <input type="text" placeholder="کد تخفیف خود را وارد نمایید..">
+                    </div>
+                    <div class="basket_page_factor_bottom">
+                        <div>
+                            <div class="basket_page_total_bottom">
+                                <p style="color:#508750">=</p>
+                                <p>مبلغ قابل پرداخت</p>
+                            </div>
+                            <p class="baket_page_payment">۷۸۰,۰۰۰ تومان</p>
+                        </div>
+                        <button type="submit">تکمیل فرآیند خرید</button>
+                    </div>
+                </div>
+            </form>
+            <div class="basket_page_items">
+                <div class="basket_page_item">
+                    <div class="basket_page_item_img"><img src="./picture/products/1-1.svg" alt=""></div>
+                    <div class="basket_page_item_desc">
+                        <div class="basket_page_item_desc_name">
+                            <p>نام محصول:</p>
+                            <p>سینی گرد کد ۳۴۳۵</p>
+                        </div>
+                        <div class="basket_page_item_desc_size">                            
+                            <p>سایز :</p>
+                            <p>متوسط</p>
+                        </div>
+                        <div class="basket_page_item_desc_amount">
+                            <p>تعداد:</p>
+                            <div class="basket_page_item_desc_amount_button">
+                                <button><img src="./icons/plus.svg" alt=""></button>
+                                <p style="margin-top:5px ;">1</p>
+                                <button><img src="./icons/remove.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="basket_page_item_desc_price">
+                            <p>قیمت محصول:</p>
+                            <p>۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_page_item">
+                    <div class="basket_page_item_img"><img src="./picture/products/1-1.svg" alt=""></div>
+                    <div class="basket_page_item_desc">
+                        <div class="basket_page_item_desc_name">
+                            <p>نام محصول:</p>
+                            <p>سینی گرد کد ۳۴۳۵</p>
+                        </div>
+                        <div class="basket_page_item_desc_size">                            
+                            <p>سایز :</p>
+                            <p>متوسط</p>
+                        </div>
+                        <div class="basket_page_item_desc_amount">
+                            <p>تعداد:</p>
+                            <div class="basket_page_item_desc_amount_button">
+                                <button><img src="./icons/plus.svg" alt=""></button>
+                                <p style="margin-top:5px ;">1</p>
+                                <button><img src="./icons/remove.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="basket_page_item_desc_price">
+                            <p>قیمت محصول:</p>
+                            <p>۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_page_item">
+                    <div class="basket_page_item_img"><img src="./picture/products/1-1.svg" alt=""></div>
+                    <div class="basket_page_item_desc">
+                        <div class="basket_page_item_desc_name">
+                            <p>نام محصول:</p>
+                            <p>سینی گرد کد ۳۴۳۵</p>
+                        </div>
+                        <div class="basket_page_item_desc_size">                            
+                            <p>سایز :</p>
+                            <p>متوسط</p>
+                        </div>
+                        <div class="basket_page_item_desc_amount">
+                            <p>تعداد:</p>
+                            <div class="basket_page_item_desc_amount_button">
+                                <button><img src="./icons/plus.svg" alt=""></button>
+                                <p style="margin-top:5px ;">1</p>
+                                <button><img src="./icons/remove.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="basket_page_item_desc_price">
+                            <p>قیمت محصول:</p>
+                            <p>۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_page_item">
+                    <div class="basket_page_item_img"><img src="./picture/products/1-1.svg" alt=""></div>
+                    <div class="basket_page_item_desc">
+                        <div class="basket_page_item_desc_name">
+                            <p>نام محصول:</p>
+                            <p>سینی گرد کد ۳۴۳۵</p>
+                        </div>
+                        <div class="basket_page_item_desc_size">                            
+                            <p>سایز :</p>
+                            <p>متوسط</p>
+                        </div>
+                        <div class="basket_page_item_desc_amount">
+                            <p>تعداد:</p>
+                            <div class="basket_page_item_desc_amount_button">
+                                <button><img src="./icons/plus.svg" alt=""></button>
+                                <p style="margin-top:5px ;">1</p>
+                                <button><img src="./icons/remove.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="basket_page_item_desc_price">
+                            <p>قیمت محصول:</p>
+                            <p>۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_page_item">
+                    <div class="basket_page_item_img"><img src="./picture/products/1-1.svg" alt=""></div>
+                    <div class="basket_page_item_desc">
+                        <div class="basket_page_item_desc_name">
+                            <p>نام محصول:</p>
+                            <p>سینی گرد کد ۳۴۳۵</p>
+                        </div>
+                        <div class="basket_page_item_desc_size">                            
+                            <p>سایز :</p>
+                            <p>متوسط</p>
+                        </div>
+                        <div class="basket_page_item_desc_amount">
+                            <p>تعداد:</p>
+                            <div class="basket_page_item_desc_amount_button">
+                                <button><img src="./icons/plus.svg" alt=""></button>
+                                <p style="margin-top:5px ;">1</p>
+                                <button><img src="./icons/remove.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="basket_page_item_desc_price">
+                            <p>قیمت محصول:</p>
+                            <p>۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footers">
+        <div class="footer_1">
+            <div class="footer_icons">
+                <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/home.svg" alt=""></a></div>
+                <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/cart.svg" alt=""></a></div>
+                <div class="footer_icon"><a href="#"><img class="footer_icon" src="./icons/footer/menu.svg" alt=""></a></div>
+                <div class="footer_icon"><a href="signup-signin.html"><img class="footer_icon" src="./icons/footer/profile.svg" alt=""></a></div>
+            </div>
+        </div>
+        <div class="footer_2">
+            <div class="about_us">
+                <div style="margin-left: 165px;">
+                    <img src="./picture/White_Logo 1.svg" alt="">
+                    <div class="footer_details"><p>با کمک راییکا به طبیعت آسیبی نمی‌رسانیم</p></div>
+                </div>
+                <div style="margin-left: 165px;">
+                    <p style="color:#E5E7E4;" >دسته بندی محصولات</p>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>سینی</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>بشقاب</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>کاسه</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>ظروف پارت بندی شده</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>کالکشن ها</p></a>
+                </div>
+                <div>
+                    <p style="color:#E5E7E4; width: 90px;" >راهنمای سایت</p>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>ارتباط با ما</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>سوالات متداول</p></a>
+                    <a href="#" style="text-decoration: none; font-size: 14px; color:#E5E7E4;"><p>پیگیری سفارشات</p></a>
+                </div>
+            </div>
+            <div class="namad">
+                <a href="#"><img class="namad" src="./namad/image 1.svg" alt=""></a>
+                <a href="#"><img class="namad" src="./namad/image 2.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+   </div>
+<script src="./script.js"></script>
+</body>
+</html>

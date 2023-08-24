@@ -2106,6 +2106,190 @@ div.customer_comment{
     margin-top: 12px;
     height: auto;
 }
+/* basket page */
+div.basket_page{
+    margin:32px 16px ;
+    height: 5000px;                                             /* change height later*/
+}
+div.basket_page_factor{
+    padding: 42px 24px 54px 24px;
+    border: solid 1px #E0E0E0;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+div.basket_page_factor_top{
+    border-bottom: solid 1px #E8E8E8;
+    padding-bottom: 16px;
+    font-family: yekan_bakh;
+}
+p.basket_page_factor_title{
+    font-size: 18px;
+    font-weight: 900;
+    color: #2E2F30;
+}
+div.basket_page_total{
+    display: flex;
+}
+div.basket_page_total p{
+    margin-left: 5px;
+    font-size: 18px;
+    color: #666A6E;
+}
+div.basket_page_total p:last-child{
+    color: #55585B;
+    font-size: 18px;
+}
+div.basket_page_off{
+    display: flex;
+}
+div.basket_page_off p{
+    margin-left: 5px;
+    font-size: 18px;
+    color: #666A6E;
+}
+div.basket_page_off p:last-child{
+    color: #55585B;
+    font-size: 18px;
+}
+div.basket_page_factor_top input{
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-bottom:solid 1px #9EA49D;
+    border-radius: 6px;
+    background-color: #FAFAFA;
+    padding: 16px 12px;
+    color: #9EA49D;
+    font-size: 16px;
+}
+div.basket_page_factor_top input:focus{
+    border: solid 1px #65885D;
+    outline: none;
+}
+div.basket_page_factor_bottom{
+    font-family: yekan_bakh;
+    padding-top: 16px;
+}
+p.baket_page_payment{
+    font-size: 22px;
+    font-weight: 700;
+    color: #55585B;
+}
+div.basket_page_total_bottom{
+    display: flex;
+}
+div.basket_page_total_bottom p{
+    margin-left: 5px;
+    font-size: 18px;
+    color: #666A6E;
+    margin-bottom:0 ;
+}
+div.basket_page_factor_bottom button{
+    width: 100%;
+    height: 48px;
+    background-color: #65885D;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius:8px ;
+}
+div.basket_page_items{
+    margin-top: 30px;
+    padding: 32px 12px;
+    background-color: #FFFFFF;
+    width: 330px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+}
+div.basket_page_item{
+    display: flex;
+    justify-content: start;
+    font-family: yekan_bakh;
+    align-items: center;
+    border-bottom: solid 1px #EAEAEA;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+div.basket_page_item:last-child{
+    border: none;
+}
+div.basket_page_item_img{
+    width: 136px;
+    height: 136px;
+    border: solid 1px #EAEAEA;
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+div.basket_page_item_img img{
+    width: 120px;
+    height: 120px;
+}
+div.basket_page_item_desc_name{
+    font-size: 14px;
+    color: #666A6E;
+    height: 40px;
+    margin-bottom: 10px;
+}
+div.basket_page_item_desc_name p:last-child{
+    font-size: 14px;
+    color: #666A6E;
+    font-weight: 700;
+}
+div.basket_page_item_desc_name p{
+    margin: 0;
+}
+div.basket_page_item_desc_size{
+    font-size: 14px;
+    color: #666A6E;
+    height: 40px;
+    margin-bottom: 10px;
+}
+div.basket_page_item_desc_size p:last-child{
+    font-size: 14px;
+    color: #666A6E;
+    font-weight: 700;
+}
+div.basket_page_item_desc_size p{
+    margin: 0;
+}
+div.basket_page_item_desc_amount {
+    font-size: 14px;
+    color: #666A6E;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 128px;
+}
+div.basket_page_item_desc_amount p{
+    margin: 0;
+}
+div.basket_page_item_desc_amount_button{
+    display: flex;
+    width: 72px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 1px #65885D;
+    height: 32px;
+}
+div.basket_page_item_desc_amount_button p{
+    margin: 2px;
+}
+div.basket_page_item_desc_price{
+    font-size: 14px;
+    color: #666A6E;
+    height: 40px;
+    margin-bottom: 10px;
+}
+div.basket_page_item_desc_price p:last-child{
+    font-size: 14px;
+    color: #666A6E;
+    font-weight: 700;
+}
+div.basket_page_item_desc_price p{
+    margin: 0;
+}
 /* resposive */
 
 @media screen and (min-width:361px) {
