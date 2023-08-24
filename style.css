@@ -2108,8 +2108,7 @@ div.customer_comment{
 }
 /* basket page */
 div.basket_page{
-    margin:32px 16px ;
-    height: 5000px;                                             /* change height later*/
+    margin:32px 16px ;                                           /* change height later*/
 }
 div.basket_page_factor{
     padding: 42px 24px 54px 24px;
@@ -2196,9 +2195,11 @@ div.basket_page_items{
     margin-top: 30px;
     padding: 32px 12px;
     background-color: #FFFFFF;
-    width: 330px;
+    width: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);   
 }
 div.basket_page_item{
     display: flex;
@@ -2326,6 +2327,10 @@ div.basket_page_item_desc_price p{
 
 @media screen and (min-width:576px) {
     div.plp_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    div.basket_page_item_desc{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -2523,6 +2528,15 @@ div.basket_page_item_desc_price p{
         width: 75%;
         float: left;
     }
+    div.basket_page_item_desc{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    div.basket_page_item_desc_amount{
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:850px) {
     div.pdp_page_slider_demo{
@@ -2688,7 +2702,20 @@ div.basket_page_item_desc_price p{
     div.comment_page{
         margin: 64px 73px;
     }
-
+    div.basket_page{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        justify-content: start;
+    }
+    div.basket_page_items{
+        width: 75%;
+        margin-left: 22px;
+        margin-top: 0;
+    }
+    div.basket_page_factor{
+        width: 306px;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -2999,5 +3026,9 @@ div.basket_page_item_desc_price p{
     }
     div.comment_page{
         width: 1440px;
+    }
+    div.basket_page{
+        width: 1440px;
+        
     }
 }
