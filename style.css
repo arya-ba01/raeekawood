@@ -2291,6 +2291,167 @@ div.basket_page_item_desc_price p:last-child{
 div.basket_page_item_desc_price p{
     margin: 0;
 }
+/* location page */
+div.location_page_fliter_catagorys{
+    color: #666A6E;
+    width: 241px;
+    height: 45px;
+    font-family: yekan_bakh;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 11px;
+}
+div.location_page_fliter_catagorys:last-child{
+    border-style: none;
+}
+div.location_page_fliter_catagorys input[type=checkbox]{
+    opacity: 0;
+}
+div.location_page_fliter_catagorys input[type=checkbox] + label{
+    position: relative;
+    cursor: pointer;
+    color: #666A6E;
+    padding-right:40px ;
+}
+
+div.location_page_fliter_catagorys input[type=checkbox] + label::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid #000000;
+    right: 0;
+    top: 0;
+    border-radius: 4px;
+}
+div.location_page_fliter_catagorys input[type=checkbox]:checked + label::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border-radius: 4px;
+}
+
+div.location_page_fliter_catagorys input[type=checkbox]:checked + label::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border-radius: 4px;
+    background-image: url(./icons/check-mark-icon-transparent-12.png);
+    background-size: contain;
+}
+div.location_page{
+    padding: 32px 16px 32px 16px;
+    height: 2000px;
+}
+div.shipment{
+    border: solid 1px #E0E0E0;
+    border-radius: 12px;
+    padding: 32px 24px 54px 24px;
+    margin-bottom: 52px;
+}
+div.shipment p {
+    font-family: yekan_bakh;
+    font-size: 16px;
+    font-weight: 700;
+}
+div.shipment_time{
+    padding-bottom: 16px;
+    border-bottom: solid 1px #E8E8E8;
+    margin-bottom: 12px;
+}
+div.shipment_method{
+    padding-bottom: 16px;
+    border-bottom: solid 1px #E8E8E8;
+    margin-bottom: 24px;
+}
+button.adding_location_button{
+    width: 100%;
+    height: 48px;
+    border: solid 1px #65885D;
+    border-radius: 8px;
+    color: #65885D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.adding_location_button p{
+    margin: 0;
+    font-size: 14px;
+}
+div.location p:first-child{
+    font-size: 18px;
+    font-family: yekan_bakh;
+    font-weight: 700;
+    margin-right: 2px;
+}
+div.location_page_locations{
+    color: #666A6E;
+    font-family: yekan_bakh;
+    width: 100%;
+    height: 80px;
+    padding: 21px 16px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #E0E0E0;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+}
+div.location_page_locations input[type=checkbox]{
+    opacity: 0;
+}
+div.location_page_locations input[type=checkbox] + label{
+    position: relative;
+    cursor: pointer;
+    color: #666A6E;
+    padding-right:40px ;
+}
+
+div.location_page_locations input[type=checkbox] + label::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid #000000;
+    right: 0;
+    top: 0px;
+    border-radius: 4px;
+    align-self:center ;
+}
+div.location_page_locations input[type=checkbox]:checked + label::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0px;
+    border-radius: 4px;
+    align-self:center ;
+}
+
+div.location_page_locations input[type=checkbox]:checked + label::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0px;
+    border-radius: 4px;
+    background-image: url(./icons/check-mark-icon-transparent-12.png);
+    background-size: contain;
+    align-self:center ;
+}
+p.adding_location_button{
+    font-size: 14px;
+}
 /* resposive */
 
 @media screen and (min-width:361px) {
@@ -2332,6 +2493,14 @@ div.basket_page_item_desc_price p{
     div.basket_page_item_desc{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    div.location_page{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    div.location{
+        margin-left: 22px;
     }
 }
 
@@ -2536,6 +2705,19 @@ div.basket_page_item_desc_price p{
     }
     div.basket_page_item_desc_amount{
         flex-direction: column;
+    }
+    div.location{
+        width: 100%;
+    }
+    div.location_page_locations{
+        justify-content: start;
+    }
+    button.adding_location_button{
+        width: 168px;
+        float: left;
+    }
+    div.location_page_locations{
+        font-size: 16px;
     }
 }
 @media screen and (min-width:850px) {
